@@ -303,11 +303,11 @@ monaco.languages.setMonarchTokensProvider("latex", {
 
 // Define a new theme that contains only rules that match this language
 monaco.editor.defineTheme("latex-theme", {
-	base: "vs-dark",
+	base: "vs",
 	inherit: true,
 	rules: [
 		{ token: "special", foreground: "#ae81ff" },
-		{ token: "brackets", foreground: "#ffffff" },
+		{ token: "brackets", foreground: "#000000" },
 		{ token: "keyword", foreground: "#f92672" },
 	],
 	colors: {},
@@ -351,7 +351,7 @@ function download() {
 <template>
 	<div class="flex-col h-screen overflow-auto">
 		<div
-			class="flex w-full py-2 px-4 bg-gray-50 justify-between items-center text-blue-500"
+			class="flex w-full py-2 px-4 bg-emerald-50 justify-between items-center"
 		>
 			<h1 class="font-extrabold text-2xl">LaTeX Web Test</h1>
 			<div>
@@ -370,8 +370,8 @@ function download() {
 			</div>
 		</div>
 		<div class="flex flex-1">
-			<div ref="container" class="flex-1 h-screen"></div>
-			<div class="flex-1 h-100 overflow-hidden mb-20">
+			<div ref="container" class="flex-1 h-screen w-full"></div>
+			<div class="flex-1 h-100 overflow-hidden">
 				<latex-js
 					v-if="renderComponent"
 					class="inline-block h-screen overflow-auto"
