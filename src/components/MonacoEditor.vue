@@ -351,7 +351,7 @@ function download() {
 <template>
 	<div class="flex-col h-screen overflow-auto">
 		<div
-			class="flex w-full py-2 px-4 bg-emerald-50 justify-between items-center"
+			class="flex w-full py-2 px-4 bg-gray-100 justify-between items-center border-b"
 		>
 			<h1 class="font-extrabold text-2xl">LaTeX Web Test</h1>
 			<div>
@@ -370,6 +370,12 @@ function download() {
 			</div>
 		</div>
 		<div class="flex flex-1">
+			<div class="w-80 h-screen bg-gray-100 p-4 border-r text-sm">
+				YOUR PROJECT
+				<ul>
+					<li class="bg-blue-200 px-1 mt-2">Index.tex</li>
+				</ul>
+			</div>
 			<div ref="container" class="flex-1 h-screen w-full"></div>
 			<div class="flex-1 h-100 overflow-hidden">
 				<latex-js
