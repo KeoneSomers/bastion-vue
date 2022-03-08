@@ -1,7 +1,7 @@
-<script setup lang="ts">
-import HelloWorld from "./components/HelloWorld.vue";
+<script setup>
+import MonacoEditor from "./components/MonacoEditor.vue";
 </script>
 
 <template>
-	<HelloWorld msg="Hello Vue 3 + TypeScript + Vite" />
+	<MonacoEditor />
 </template>
