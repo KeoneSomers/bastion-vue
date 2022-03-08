@@ -376,15 +376,16 @@ function download() {
 					<li class="bg-blue-200 px-1 mt-2">Index.tex</li>
 				</ul>
 			</div>
-			<div ref="container" class="flex-1 h-screen w-full"></div>
-			<div class="flex-1 h-100 overflow-hidden">
-				<latex-js
-					v-if="renderComponent"
-					class="inline-block h-screen overflow-auto"
-				>
-					{{ content }}
-				</latex-js>
-			</div>
+			<div
+				ref="container"
+				class="flex-1 h-screen w-full overflow-hidden border-r"
+			></div>
+			<latex-js
+				v-if="renderComponent"
+				class="flex-1 inline-block h-screen overflow-auto"
+			>
+				{{ content }}
+			</latex-js>
 		</div>
 	</div>
 </template>
